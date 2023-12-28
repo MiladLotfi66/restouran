@@ -1,9 +1,9 @@
-
+import HomePage from "../component/templates/HomePage";
 
 export default function Home() {
   return (
-    <div >
-    <h1>restouran</h1>      
+    <div>
+      <HomePage />
     </div>
-  )
+  );
 }
