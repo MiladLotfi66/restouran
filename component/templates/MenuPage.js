@@ -1,10 +1,13 @@
-import React from 'react'
+import styles from './MenuPage.module.css'
 
 function MenuPage({data}) {
     console.log(data);
   return (
-    <div>
-      menupage template
+    <div className={styles.container}>
+        <h2>menu</h2>
+        <div className={styles.subContainer}>{
+            data.map(food=><p key={food.id}>{food.name}</p>)
+            }</div>
     </div>
   )
 }
